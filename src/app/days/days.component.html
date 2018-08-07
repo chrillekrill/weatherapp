@@ -1,30 +1,58 @@
-<div class="dates">
+<div class="dates" ng-app="MyApp" ng-controller="MyController">
 <div class="weather">
-  <h1>{{date1}}</h1>
+  <h1><a (click)="toggleshowday1()">{{date1}}</a></h1>
   <h2>Average {{weather1}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day1">
+    <p>Max temperature: {{maxtemp1}}°C</p>
+    <p>Minimum temperature: {{mintemp1}}°C</p>
+  </div>
 </div>
 <div class="weather">
-  <h1>{{date2}}</h1>
+  <h1><a (click)="toggleshowday2()">{{date2}}</a></h1>
   <h2>Average {{weather2}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day2">
+    <p>Max temperature: {{maxtemp2}}°C</p>
+    <p>Minimum temperature: {{mintemp2}}°C</p>
+  </div>
 </div>
 <div class="weather">
-  <h1>{{date3}}</h1>
+  <h1><a (click)="toggleshowday3()">{{date3}}</a></h1>
   <h2>Average {{weather3}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day3">
+    <p>Max temperature: {{maxtemp3}}°C</p>
+    <p>Minimum temperature: {{mintemp3}}°C</p>
+  </div>
 </div>
 <div class="weather">
-  <h1>{{date4}}</h1>
+  <h1><a (click)="toggleshowday4()">{{date4}}</a></h1>
   <h2>Average {{weather4}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day4">
+    <p>Max temperature: {{maxtemp4}}°C</p>
+    <p>Minimum temperature: {{mintemp4}}°C</p>
+  </div>
 </div>
 <div class="weather">
-  <h1>{{date5}}</h1>
+  <h1><a (click)="toggleshowday5()">{{date5}}</a></h1>
   <h2>Average {{weather5}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day5">
+    <p>Max temperature: {{maxtemp5}}°C</p>
+    <p>Minimum temperature: {{mintemp5}}°C</p>
+  </div>
 </div>
 <div class="weather">
-  <h1>{{date6}}</h1>
+  <h1><a (click)="toggleshowday6()">{{date6}}</a></h1>
   <h2>Average {{weather6}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day6">
+    <p>Max temperature: {{maxtemp6}}°C</p>
+    <p>Minimum temperature: {{mintemp6}}°C</p>
+  </div>
 </div>
 <div class="weather">
-  <h1>{{date7}}</h1>
+  <h1><a (click)="toggleshowday7()">{{date7}}</a></h1>
   <h2>Average {{weather7}}°C</h2>
+  <div class="toggle-panel single-day" *ngIf="day7">
+    <p>Max temperature: {{maxtemp7}}°C</p>
+    <p>Minimum temperature: {{mintemp7}}°C</p>
+  </div>
 </div>
 </div>

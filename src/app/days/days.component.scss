@@ -15,4 +15,14 @@ body {
 }
 h1 {
   font-size: 25px;
+  :hover {
+    cursor: pointer;
+  }
+}
+a{
+  text-decoration: none;
+}
+.single-day {
+  background-color: lightblue;
+  height: 200px;
 }
