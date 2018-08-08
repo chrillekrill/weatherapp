@@ -13,7 +13,6 @@ export class RecordsService {
   constructor(private http: HttpClient) {
   }
   getData() {
-    return this.http.get<myData>('http://api.apixu.com/v1/forecast.json?key=26139d4e102045b7a39170537180608&q=stockholm&days=7')
-
+    return this.http.get<myData>('https://api.openweathermap.org/data/2.5/weather?q=stockholm,se&APPID=e8fcb354d30f73585557ab4fe293cefa')
   }
 }
