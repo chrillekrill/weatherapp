@@ -7,7 +7,7 @@ import { DaysComponent } from './days/days.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DaysComponent,
+    DaysComponent
   ],
   imports: [
     BrowserModule,
