@@ -1,58 +1,72 @@
 <div class="dates" ng-app="MyApp" ng-controller="MyController">
 <div class="weather">
   <h1><a (click)="toggleshowday1()">{{date1}}</a></h1>
-  <h2>Average {{weather1}}°C</h2>
+  <h2>Average {{weather1}}°C <img src="{{icon1}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day1">
+    <p>{{information1}}</p>
     <p>Max temperature: {{maxtemp1}}°C</p>
     <p>Minimum temperature: {{mintemp1}}°C</p>
+    <p>Average humidity: {{humidity1}}%</p>
   </div>
 </div>
 <div class="weather">
   <h1><a (click)="toggleshowday2()">{{date2}}</a></h1>
-  <h2>Average {{weather2}}°C</h2>
+  <h2>Average {{weather2}}°C <img src="{{icon2}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day2">
+    <p>{{information2}}</p>
     <p>Max temperature: {{maxtemp2}}°C</p>
     <p>Minimum temperature: {{mintemp2}}°C</p>
+    <p>Average humidity: {{humidity2}}%</p>
   </div>
 </div>
 <div class="weather">
   <h1><a (click)="toggleshowday3()">{{date3}}</a></h1>
-  <h2>Average {{weather3}}°C</h2>
+  <h2>Average {{weather3}}°C <img src="{{icon3}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day3">
+    <p>{{information3}}</p>
     <p>Max temperature: {{maxtemp3}}°C</p>
     <p>Minimum temperature: {{mintemp3}}°C</p>
+    <p>Average humidity: {{humidity3}}%</p>
   </div>
 </div>
 <div class="weather">
   <h1><a (click)="toggleshowday4()">{{date4}}</a></h1>
-  <h2>Average {{weather4}}°C</h2>
+  <h2>Average {{weather4}}°C <img src="{{icon4}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day4">
+    <p>{{information4}}</p>
     <p>Max temperature: {{maxtemp4}}°C</p>
     <p>Minimum temperature: {{mintemp4}}°C</p>
+    <p>Average humidity: {{humidity4}}%</p>
   </div>
 </div>
 <div class="weather">
   <h1><a (click)="toggleshowday5()">{{date5}}</a></h1>
-  <h2>Average {{weather5}}°C</h2>
+  <h2>Average {{weather5}}°C <img src="{{icon5}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day5">
+    <p>{{information5}}</p>
     <p>Max temperature: {{maxtemp5}}°C</p>
     <p>Minimum temperature: {{mintemp5}}°C</p>
+    <p>Average humidity: {{humidity5}}%</p>
   </div>
 </div>
 <div class="weather">
   <h1><a (click)="toggleshowday6()">{{date6}}</a></h1>
-  <h2>Average {{weather6}}°C</h2>
+  <h2>Average {{weather6}}°C <img src="{{icon6}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day6">
+    <p>{{information6}}</p>
     <p>Max temperature: {{maxtemp6}}°C</p>
     <p>Minimum temperature: {{mintemp6}}°C</p>
+    <p>Average humidity: {{humidity6}}%</p>
   </div>
 </div>
 <div class="weather">
   <h1><a (click)="toggleshowday7()">{{date7}}</a></h1>
-  <h2>Average {{weather7}}°C</h2>
+  <h2>Average {{weather7}}°C <img src="{{icon7}}"></h2>
   <div class="toggle-panel single-day" *ngIf="day7">
+    <p>{{information7}}</p>
     <p>Max temperature: {{maxtemp7}}°C</p>
     <p>Minimum temperature: {{mintemp7}}°C</p>
+    <p>Average humidity: {{humidity7}}%</p>
   </div>
 </div>
 </div>
