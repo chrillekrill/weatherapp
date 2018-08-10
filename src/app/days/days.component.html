@@ -1,72 +1,12 @@
-<div class="dates" ng-app="MyApp" ng-controller="MyController">
-<div class="weather">
-  <h1><a (click)="day1=!day1">{{dates[0].date}}</a></h1>
-  <h2>Average {{dates[0].day.avgtemp_c}}°C <img src="{{dates[0].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day1">
-    <p>{{dates[0].day.condition.text}}</p>
-    <p>Max temperature: {{dates[0].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[0].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[0].day.avghumidity}}%</p>
-  </div>
-</div>
-<div class="weather">
-  <h1><a (click)="day2=!day2">{{dates[1].date}}</a></h1>
-  <h2>Average {{dates[1].day.avgtemp_c}}°C <img src="{{dates[1].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day2">
-    <p>{{dates[1].day.condition.text}}</p>
-    <p>Max temperature: {{dates[1].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[1].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[1].day.avghumidity}}%</p>
-  </div>
-</div>
-<div class="weather">
-  <h1><a (click)="day3=!day3">{{dates[2].date}}</a></h1>
-  <h2>Average {{dates[2].day.avgtemp_c}}°C <img src="{{dates[2].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day3">
-    <p>{{dates[2].day.condition.text}}</p>
-    <p>Max temperature: {{dates[2].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[2].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[2].day.avghumidity}}%</p>
-  </div>
-</div>
-<div class="weather">
-  <h1><a (click)="day4=!day4">{{dates[3].date}}</a></h1>
-  <h2>Average {{dates[3].day.avgtemp_c}}°C <img src="{{dates[3].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day4">
-    <p>{{dates[3].day.condition.text}}</p>
-    <p>Max temperature: {{dates[3].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[3].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[3].day.avghumidity}}%</p>
-  </div>
-</div>
-<div class="weather">
-  <h1><a (click)="day5=!day5">{{dates[4].date}}</a></h1>
-  <h2>Average {{dates[4].day.avgtemp_c}}°C <img src="{{dates[4].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day5">
-    <p>{{dates[4].day.condition.text}}</p>
-    <p>Max temperature: {{dates[4].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[4].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[4].day.avghumidity}}%</p>
-  </div>
-</div>
-<div class="weather">
-  <h1><a (click)="day6=!day6">{{dates[5].date}}</a></h1>
-  <h2>Average {{dates[5].day.avgtemp_c}}°C <img src="{{dates[5].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day6">
-    <p>{{dates[5].day.condition.text}}</p>
-    <p>Max temperature: {{dates[5].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[5].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[5].day.avghumidity}}%</p>
-  </div>
-</div>
-<div class="weather">
-  <h1><a (click)="day7=!day7">{{dates[6].date}}</a></h1>
-  <h2>Average {{dates[6].day.avgtemp_c}}°C <img src="{{dates[6].day.condition.icon}}"></h2>
-  <div class="toggle-panel single-day" *ngIf="day7">
-    <p>{{dates[6].day.condition.text}}</p>
-    <p>Max temperature: {{dates[6].day.maxtemp_c}}°C</p>
-    <p>Minimum temperature: {{dates[6].day.mintemp_c}}°C</p>
-    <p>Average humidity: {{dates[6].day.avghumidity}}%</p>
+<div class="dates" ng-app="MyApp" ng-controller="exampleController">
+<div class="weather" *ngFor="let item of dates; let i = index"  (click)="hideme[i] = !hideme[i]">
+  <h1><a>{{item.date}}</a></h1>
+  <h2>Average {{item.day.avgtemp_c}}°C <img src="{{item.day.condition.icon}}"></h2>
+  <div class="toggle-panel single-day" *ngIf="hideme[i]">
+    <p>{{item.day.condition.text}}</p>
+    <p>Max temperature: {{item.day.maxtemp_c}}°C</p>
+    <p>Minimum temperature: {{item.day.mintemp_c}}°C</p>
+    <p>Average humidity: {{item.day.avghumidity}}%</p>
   </div>
 </div>
 </div>

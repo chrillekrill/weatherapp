@@ -14,6 +14,7 @@ class myData {
 export class DaysComponent implements OnInit {
 
   dates = []
+  hideme=[]
 
   constructor(private myFirstService : RecordsService) {
   }
